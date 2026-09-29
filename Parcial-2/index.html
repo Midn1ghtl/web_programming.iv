@@ -17,63 +17,58 @@
         <main>
 
             <div class="parent">
-
-                <section class="cuadro">
                     
-                    <div class="titulo">
-                        <h1>Registro</h1>
+                <div class="titulo">
+                    <h1>Registro</h1>
+
+                </div>
+
+                <form action="/action_registro.php" method="get" class="signup">
+                    
+                    <div class="form1">
+                        
+
+                        <label for="fname"> Nombre: </label><br>
+                        <input type="text" id="fname" name="fname" required/><br><br>
+
+                        <label for="email">Correo electrónico</label><br>
+                        <input type="email" id="email" name="email" required><br><br>
+
+                        <label for="contra">Contraseña</label><br>
+                        <input type="text" id="contra" name="contra" required><br>
 
                     </div>
 
-                    <form action="/action_registro.php" method="get" class="signup">
-                        
-                        <div class="form1">
+                    <div class="form2">
 
-                            <label for="fname"> Nombre: </label><br>
-                            <input type="text" id="fname" name="fname" required/><br><br>
+                        <label for="fname"> Usuario: </label><br>
+                        <input type="text" id="fname" name="fname" required/><br><br>
 
-                            <label for="email">Correo electrónico</label><br>
-                            <input type="email" id="email" name="email" required><br><br>
+                        <label for="numTel"> Teléfono: </label><br>
+                        <input type="tel" id="numTel" name="numTel" pattern="[0-9]" required/><br><br>
 
-                            <label for="contra">Contraseña</label><br>
-                            <input type="text" id="contra" name="contra" required><br>
+                        <label for="contra2">Confirmar contraseña</label><br>
+                        <input type="text" id="contra2" name="contra2" required><br>
+                    </div>
 
+                    <div class="check">
+
+                        <h2>Género</h2>
+                        <input type="radio" id="genero" name="genero" required>
+                        <label for="genero">Hombre</label><br>
+                        <input type="radio" id="genero2" name="genero2" required>
+                        <label for="genero2">Mujer</label><br>
+                        <input type="radio" id="genero3" name="genero3" required>
+                        <label for="genero3">Prefiero no decirlo</label><br>
+
+                        <div class="boton"><br>
+                            <input type="submit" value="Submit">
                         </div>
-
-                        <div class="form2">
-
-                            <label for="fname"> Usuario: </label><br>
-                            <input type="text" id="fname" name="fname" required/><br><br>
-
-                            <label for="numTel"> Teléfono: </label><br>
-                            <input type="tel" id="numTel" name="numTel" pattern="[0-9]" required/><br><br>
-
-                            <label for="contra2">Confirmar contraseña</label><br>
-                            <input type="text" id="contra2" name="contra2" required><br>
-                        </div>
-
-                        <div class="check">
-
-                            <h2>Género</h2>
-                            <input type="radio" id="genero" name="genero" required>
-                            <label for="genero">Hombre</label><br>
-                            <input type="radio" id="genero2" name="genero2" required>
-                            <label for="genero2">Mujer</label><br>
-                            <input type="radio" id="genero3" name="genero3" required>
-                            <label for="genero3">Prefiero no decirlo</label><br>
-
-                            <div class="boton">
-                                <input type="submit" value="Submit">
-                            </div>
-                        </div>
-
-                        
-                    
-                    </form>
+                    </div>
 
                     
-
-                </section>
+                
+                </form>
 
                 
             </div>

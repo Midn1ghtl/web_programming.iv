@@ -1,3 +1,6 @@
+body{
+    background: linear-gradient(rgb(184, 184, 229), rgb(241, 198, 205));
+}
 
 .signup {
     display: grid;
@@ -13,11 +16,13 @@
 }
 
 .form1 {
+    grid-column: span 2 / span 2;
     grid-column-start: 2;
     grid-row-start: 3;
 }
 
 .form2 {
+    grid-column: span 2 / span 2;
     grid-column-start: 3;
     grid-row-start: 3;
 }
